@@ -1,0 +1,163 @@
+             #geekhaven{
+               width: 100px;
+               height: 100px;
+            }body{
+            width:100vw;
+            height:100vh;
+            background-color: lightpink;
+            }.nav-links{
+                position: absolute;
+                right: 0;
+                top: 0;
+            }.nav-links{
+                height: 16vh;
+                background: #5b78c7;
+                display: flex;
+                list-style: none;
+                width: 50%;
+                justify-content: space-around;
+                align-items: center;
+                margin-left: auto;
+            }.nav-links li a{
+                color: white;
+                text-decoration: none;
+                font-size: 20px;
+            }a:hover{
+                background-color: lightcoral;
+            }#pic1{
+                position: absolute;
+                left: 12vw;
+                top: 30vh;
+                width: 330px;
+                height: 330px;
+                border-radius: 50%;
+            }.circle{
+                width: 105px;
+                height: 105px;
+                background-color:#04f0cc;
+                border-radius: 50%;
+                opacity: 0.5;
+                position: absolute;
+                left: 12vw;
+                top: 70vh;
+            }.cross-1{
+                font-size: 3rem;
+                position: absolute;
+                left: 34vw;
+                top: 30vh;
+                
+            }.cross-2{
+                font-size: 3rem;
+                position: absolute;
+                left: 26vw;
+                top: 85vh;
+            }
+            .bodypart{
+                position: absolute;
+                left: 50vw;
+                top: 30vh;
+                color: white;
+                display: inline-block;
+            }h1{
+                text-shadow: 2px 2px 5px orangered;
+            }
+            div:hover{
+                color: blue;
+                text-shadow: 4px 4px 5px lightblue;;
+            }h1:hover{
+                color: orange;
+                text-shadow: 2px 2px 5px yellow;
+            }.pic:hover img{
+                transform: scale(1.08);
+                box-shadow: 0 0 10px yellow;
+            }.heading{
+                color: red;
+            }.aboutme2{
+                padding-right:60px;
+                color: black;
+                font-weight: 900;
+                font-size: 20px;
+            }.aboutme{
+                padding-right:55px;
+                color: Purple;
+            }.footerhead{
+                position: absolute;
+                top: 88vh;
+                left: 40vw;
+                font-size: 20px;
+            }.icons{
+                position: absolute;
+                top: 88vh;
+                left: 43vw;
+                text-align: center;
+            }.fa1{
+                color: red;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                border:green;
+                border-style: solid;
+                border-width: 5px;
+                text-align: center;
+            }.footerhead{
+                position: absolute;
+                top: 93vh;
+                left: 40vw;
+            }
+            @media screen and (max-width: 1000px){
+                   .line{
+                       width: 30px;
+                       height: 3px;
+                       background: white;
+                       margin: 5px;
+                   }nav{
+                       position: relative;
+                   }.hamburger{
+                       position: absolute;
+                       cursor: pointer;
+                       right: 5%;
+                       top: 50%;
+                       transform: translate(-5%, -50%);
+                       z-index: 2;
+                   }.nav-links{
+                       position: fixed;
+                       background: #5b78c7;
+                       height: 35vh;
+                       width: 40%;
+                       flex-direction: column;
+                       clip-path: circle(100px at 90% -50%);
+                       -webkit-clip-path: circle(100px at 90% -50%);
+                       transition: all 1s ease-out;
+                       pointer-events: none;
+                     }
+                     .nav-links.open{
+                        clip-path: circle(800px at 90% -18%);
+                       -webkit-clip-path: circle(800px at 90% -18%);
+                       pointer-events: all;
+                     }body{
+                       width: 100vw;
+                       height: 170vh;
+                       background-color: lightpink;
+                   }.bodypart{
+                       position: absolute;
+                       left: 10px;
+                       top: 100vh;
+                   }.icons{
+                       position: absolute;
+                       left: 30vw;
+                       top: 160vh;
+                       display: inline-block;
+                   }.footerhead{
+                    position: absolute;
+                       left: 20vw;
+                       top: 166vh;
+                   }.cross-1{
+                       position: absolute;
+                       left: 62vw;
+                       top: 30vh;
+                   }.cross-2{
+                       position: absolute;
+                       left: 40vw;
+                       top: 88vh;
+                   }
+            }
